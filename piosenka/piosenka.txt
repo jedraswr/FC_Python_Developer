@@ -1,0 +1,17 @@
+zwrotka 1:
+zwrotka1.txt
+
+ref:
+refren.txt
+
+zwrotka 2:
+zwrotka2.txt
+
+ref:
+refren.txt
+
+zwrotka 3:
+zwrotka3.txt
+
+ref:
+refren.txt

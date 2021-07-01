@@ -1,0 +1,181 @@
+lenovo@Lenovo:~/Programowanie/Kurs_FC_Python/Zadania/Zadanie1$ git log -p piosenka.txt
+commit 2d5ea75027c70d5626667f7d4523680c01e960b1 (HEAD -> master)
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:23:44 2021 +0200
+
+    Uporządkowanie jednakowych refrenów
+
+diff --git a/piosenka.txt b/piosenka.txt
+index b58b22d..828fe52 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -2,16 +2,16 @@ zwrotka 1:
+ zwrotka1.txt
+ 
+ ref:
+-refren1.txt
++refren.txt
+ 
+ zwrotka 2:
+ zwrotka2.txt
+ 
+ ref:
+-refren2.txt
++refren.txt
+ 
+ zwrotka 3:
+ zwrotka3.txt
+ 
+ ref:
+-refren3.txt
++refren.txt
+
+commit f54e5d571c06fb62945347b44a4ba8f029a13651
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:18:25 2021 +0200
+
+    Wydzielenie trzeciej zwrotki i refrenu
+
+diff --git a/piosenka.txt b/piosenka.txt
+index dfa5574..b58b22d 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+
+
+
+
+
+
+lenovo@Lenovo:~/Programowanie/Kurs_FC_Python/Zadania/Zadanie1$ git log -p zwrotka1.txt
+commit 5a356def4f93b43d67c2c222f4932c2d8280c0f0
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:10:10 2021 +0200
+
+    Wydzielenie pierwszej zwrotki i refrenu
+
+diff --git a/zwrotka1.txt b/zwrotka1.txt
+new file mode 100644
+index 0000000..98ca291
+--- /dev/null
++++ b/zwrotka1.txt
+@@ -0,0 +1,9 @@
++zwrotka 1:
++Za rok może dwa schodami na strych 
++odejdą z ołowiu żołnierze
++przeminie jak wiatr uśmiechów twych świat
++kolory marzeniom odbierze
++za rok może dwa schodami na strych
++za misiem kudłatym poczłapią
++beztroskie te dni i zobaczysz
++że jednak wspaniały był on...
+
+
+
+
+
+lenovo@Lenovo:~/Programowanie/Kurs_FC_Python/Zadania/Zadanie1$ git log -p zwrotka3.txt
+commit f54e5d571c06fb62945347b44a4ba8f029a13651
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:18:25 2021 +0200
+
+    Wydzielenie trzeciej zwrotki i refrenu
+
+diff --git a/zwrotka3.txt b/zwrotka3.txt
+new file mode 100644
+index 0000000..f832f87
+--- /dev/null
++++ b/zwrotka3.txt
+@@ -0,0 +1,9 @@
++zwrotka 3:
++Radosny to dzień wspaniały to dzień
++wracają z ołowiu żołnierze
++ze strychu znów w dół schodami aż tu
++wracają lecz już nie do ciebie
++by ktoś tak jak ty radosne miał dni
++powrócił przyjaciel ten z wiosny
++dlaczego to każdy już powie
++na plecach przyniosłeś go tu...
+
+
+
+
+lenovo@Lenovo:~/Programowanie/Kurs_FC_Python/Zadania/Zadanie1$ git log -p refren.txt
+commit 2d5ea75027c70d5626667f7d4523680c01e960b1 (HEAD -> master)
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:23:44 2021 +0200
+
+    Uporządkowanie jednakowych refrenów
+
+diff --git a/refren.txt b/refren.txt
+new file mode 100644
+index 0000000..fc8538a
+--- /dev/null
++++ b/refren.txt
+@@ -0,0 +1,7 @@
++ref:
++Konik - z drzewa koń na biegunach
++zwykła zabawka mała huśtawka
++a rozkołysze rozbawi
++konik - z drzewa koń na biegunach
++przyjaciel wiosny uśmiech radosny
++każdy powinien go mieć!
+
+
+
+lenovo@Lenovo:~/Programowanie/Kurs_FC_Python/Zadania/Zadanie1$ git log
+commit 2d5ea75027c70d5626667f7d4523680c01e960b1 (HEAD -> master)
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:23:44 2021 +0200
+
+    Uporządkowanie jednakowych refrenów
+
+commit f76ada3f81accbf8def95b160a52f5be6c1e3049
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:20:55 2021 +0200
+
+    Revert "Usunięcie pierwszej linii z refrenu 1"
+    
+    This reverts commit 85f663e5ff7e354ad4c85648efbac89b8f697510.
+
+commit 85f663e5ff7e354ad4c85648efbac89b8f697510
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:20:17 2021 +0200
+
+    Usunięcie pierwszej linii z refrenu 1
+
+commit f54e5d571c06fb62945347b44a4ba8f029a13651
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:18:25 2021 +0200
+
+    Wydzielenie trzeciej zwrotki i refrenu
+
+commit 7c9394e1b04d5ce9a7a74d93b2c7c91b14202638
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:14:23 2021 +0200
+
+    Wydzielenie drugiej zwrotki i refrenu
+
+commit 5a356def4f93b43d67c2c222f4932c2d8280c0f0
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:10:10 2021 +0200
+
+    Wydzielenie pierwszej zwrotki i refrenu
+
+commit 4d43ede2e6944e16f3c03073703b3fb6354197a9
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:05:59 2021 +0200
+
+    Podanie całego tekstu piosenki
+
+commit c5868602b8c135dd21d3515c127b9cf52a30fbbe
+Author: Wojciech Jędrasik <wojciech.jedrasik@tutamail.com>
+Date:   Mon Jun 7 16:03:18 2021 +0200
+
+    Wykaz plików pomijanych
+
+:
+
+
+
+
+
