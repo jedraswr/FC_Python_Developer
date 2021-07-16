@@ -1,0 +1,17 @@
+1000000 wpłata_początkowa
+-12000 ZUS
+-150000 spłata_kredytu
+-25000 wynagrodzenia
+35000 dotacja_COVID
+koszula 100 120
+spodnie 150 200
+czapka 80 50
+koszula -20 150
+spodnie -50 220
+czapka -30 75
+koszula 20 130
+spodnie 30 220
+czapka 20 40
+koszula -60 140
+spodnie -80 250
+czapka -40 50

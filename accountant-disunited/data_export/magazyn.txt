@@ -1,0 +1,4 @@
+Stan towarów w magazynie:
+koszula:   40
+spodnie:   50
+czapka:   30
