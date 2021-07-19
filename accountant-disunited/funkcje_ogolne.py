@@ -36,13 +36,6 @@ def import_danych(plik):
             wpis_do_logu(skladnik[1])
             continue
         else:
-#     tresc_danych.close()
-#
-# def import_handlowy():
-#     tresc_danych = open(dane_handlowe, "r", encoding="utf-8") #czytanie danych
-#     zapisy = tresc_danych.readlines()
-#     for linia in zapisy:                    #zapis handlowy
-#         skladnik = linia.split(" ")
             towar = skladnik[0]
             ilosc = int(skladnik[1])
             cena = skladnik[2]

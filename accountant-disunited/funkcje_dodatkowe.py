@@ -45,12 +45,3 @@ def przeglad_akcji(nr_od, nr_do):
         pozycja = "Nr " + numer + ":   " + akcja + "\n"
         wynik.write(pozycja)
     wynik.close()
-
-
-    # for linia in lista_akcji:
-    #     zapis1 = str(linia[0])
-    #     zapis2 = str(linia[1])
-    #     if linia[2]:
-    #         zapis3 = str(linia[2])
-    #     zapis = zapis1 + "   " + zapis2 + "   " + zapis3 + "\n"
-    #     print(zapis)
