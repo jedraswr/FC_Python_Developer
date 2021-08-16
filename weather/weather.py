@@ -39,7 +39,7 @@ def tworzenie_bazy():
         data_prognozy = datetime.date.fromtimestamp(data_prognozy)
         data_prognozy = time.mktime(data_prognozy.timetuple())
         tresc_prognozy = element['weather'][0]['main']
-        if tresc_prognozy == 'Rain':
+        if tresc_prognozy == 'Rain' or tresc_prognozy == 'Snow':
             tresc_prognozy = "Będzie padać"
         else:
             tresc_prognozy = "Nie będzie padać"
@@ -77,5 +77,3 @@ tworzenie_bazy()
 marker_i = 1
 wydruk_prognozy()
 
-# Eksport danych:
-os.system("pip freeze > requirements.txt")
