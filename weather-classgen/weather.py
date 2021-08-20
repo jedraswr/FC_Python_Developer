@@ -37,7 +37,11 @@ class KlasaPrognozy:                # samo słowo "prognozy" jest tu często odm
     def wyszukaj_prognoze(self):
         for key, value in self.lista_prognoz.items():
             if float(key) == self.data_zadana:
-                print(value)
+                print("\nPrognoza: {}".format(value))
+                print("\nLista dostępnych prognoz:")
+                for key, value in self.lista_prognoz.items():
+                    data = datetime.datetime.fromtimestamp(float(key)).strftime('%Y-%m-%d')
+                    print(data, value)
                 exit()
 
 
