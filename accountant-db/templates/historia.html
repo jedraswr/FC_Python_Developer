@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ACCOUNTANT</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="columns">
+    <div class="column col-3" style="background-color: lightgray">
+        <h3 style="margin: 40px">MENU:</h3>
+      <ul style="margin: 30px">
+          <li style="color: yellow; margin: 20px"><a href="/">Główna</a></li>
+          <li style="color: red; margin: 20px"><a href="/historia/">Historia</a></li>
+      </ul>
+      <div>
+        <h4>Aktualny stan konta:</h4>
+        <h5 align="center">{{balance}}</h5>
+      </div>
+      <div>
+        <h4>Towary w magazynie:</h4>
+          <div align="center">
+            {% for item, qty in warehouse.items() %}
+              {{item}} {{qty}}<br />
+            {% endfor %}
+          </div>
+      </div>
+    </div>
+    <div class="column col-9">
+        <h2 align="center", style="color: brown">MY ACCOUNTANT</h2>
+        <h5 align="center">HISTORIA</h5>
+        <form method="POST">
+            <div style="margin: 40px">
+                <h4 style="text: bold">Przegląd wykonanych transakcji:</h4>
+                <div class="form-group">
+                    <input class="form-input" type="hidden" value="przeglad" name="procedure">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">NUMER OD:</label>
+                    <input class="form-input" type="int" value="" placeholder="Wpisz numer początkowy" name="nr_start">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">NUMER DO:</label>
+                    <input class="form-input" type="int" value="" placeholder="Wpisz numer końcowy" name="nr_end">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">WYŚLIJ</button>
+                </div>
+                <div class="hero bg-grey">
+                    <div class="hero-sm">
+                        <div align="center" style="background: yellow">
+                            {% for list in review %}
+                            {{list}} <br />
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

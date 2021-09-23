@@ -1,0 +1,19 @@
+saldo 1000000 wpłata_początkowa
+saldo -12000 ZUS
+saldo -150000 spłata_kredytu
+saldo -25000 wynagrodzenia
+saldo 35000 dotacja_COVID
+zakup koszula 100 120
+zakup spodnie 150 200
+zakup czapka 80 50
+sprzedaz koszula 20 150
+sprzedaz spodnie 50 220
+sprzedaz czapka 30 75
+zakup koszula 20 130
+zakup spodnie 30 220
+zakup czapka 20 40
+sprzedaz koszula 60 140
+sprzedaz spodnie 80 250
+sprzedaz czapka 40 50
+zakup palto 1 10
+sprzedaz palto 1 10
